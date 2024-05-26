@@ -42,3 +42,12 @@ def note(author):
 @pytest.fixture
 def slug_for_args(note):
     return (note.slug,)
+
+
+@pytest.fixture
+def form_data():
+    return {
+        'title': 'Test title',
+        'text': 'Test text',
+        'slug': 'test_slug',
+    }
